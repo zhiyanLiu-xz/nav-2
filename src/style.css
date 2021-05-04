@@ -1,0 +1,261 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*style*/
+body {
+  background: #eee;
+}
+@media (min-width: 500px) {
+  body {
+    background: white;
+  }
+}
+.image {
+  display: flex;
+  justify-content: center;
+}
+img {
+  margin: 20px auto;
+}
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
+
+.globalHeader {
+  margin: 20px; /*上下左右都是20px*/
+}
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 60px 10px 0 0;
+  }
+}
+.img {
+  border: 1px solid red;
+}
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  max-width: 400px;
+}
+@media (min-width: 500px) {
+  /*500以下的就不管，只管500px以上的*/
+  .searchForm {
+    max-width: 561px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  } /*500以上会自动合并上面的*/
+}
+
+.searchForm > input {
+  width: 100%;
+  height: 40px;
+  margin-right: 10px;
+  padding: 0 10px;
+  border: 1px solid #ddd; /*覆盖input的默认border*/
+  border-radius: 4px; /*4px的圆角*/
+  outline: none;
+}
+@media (min-width: 500px) {
+  .searchForm > input {
+    border-radius: 50px 0px 0px 50px;
+    margin-right: 0px;
+    padding: 0 20px;
+  }
+}
+.searchForm > button {
+  white-space: nowrap; /*内容禁止换行*/
+  border: none; /*删掉button的默认border*/
+  border-radius: 4px;
+  padding: 0 28px;
+  background: #18a0fb;
+  color: white;
+  font-size: 16px;
+}
+@media (min-width: 500px) {
+  .searchForm > button {
+    border-radius: 0 50px 50px 0;
+  }
+}
+
+.globalMain {
+  max-width: 561px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.siteList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+}
+
+.siteList > li {
+  margin-bottom: 10px;
+}
+@media (min-width: 500px) {
+  .siteList > li {
+    margin-right: 0;
+  }
+}
+.siteList .site {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .siteList .site {
+    width: 112px;
+    height: 112px;
+  }
+}
+@media (min-width: 500px) {
+  .siteList .site:hover {
+    background: #e8e8e9;
+  }
+}
+.bg {
+  width: 48px;
+  height: 48px;
+}
+@media (min-width: 500px) {
+  .bg {
+    width: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #f1f3f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.siteList .site .bg > .logo {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  text-transform: uppercase; /*变成大写*/
+}
+@media (min-width: 500px) {
+  .siteList .site .bg > .logo {
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+  }
+}
+
+.siteList .site > .link {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.siteList .site > .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  display: none;
+  cursor: default;
+}
+.siteList .site:hover > .close {
+  display: block;
+}
+.siteList .addButton {
+  background: white;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+@media (min-width: 500px) {
+  .siteList .addButton:hover {
+    background: #e8e8e9;
+  }
+}
+@media (min-width: 500px) {
+  .siteList .addButton {
+    width: 112px;
+    height: 112px;
+    border-radius: 4px;
+  }
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.siteList .addButton .icon {
+  width: 64px;
+  height: 64px;
+}
+@media (min-width: 500px) {
+  .siteList .addButton .icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+.siteList .addButton .text {
+  font-size: 14px;
+  margin-top: 4px;
+}
+.siteList .addButton .icon-wrapper {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 500px) {
+  .siteList .addButton .icon-wrapper {
+    width: 48px;
+    width: 48px;
+    border-radius: 50%;
+    background: #f1f3f4;
+  }
+}
