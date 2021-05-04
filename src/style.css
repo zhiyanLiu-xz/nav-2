@@ -239,7 +239,6 @@ img {
 }
 @media (max-width: 500px) {
   .siteList .site > .link {
-    border: 1px solid red;
     max-width: 68px;
     display: flex;
     flex-wrap: wrap;

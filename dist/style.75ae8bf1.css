@@ -239,7 +239,6 @@ img {
 }
 @media (max-width: 500px) {
   .siteList .site > .link {
-    border: 1px solid red;
     max-width: 68px;
     display: flex;
     flex-wrap: wrap;
@@ -333,4 +332,4 @@ img {
 }
 
 
-/*# sourceMappingURL=style.0f2eeef6.css.map */
+/*# sourceMappingURL=style.75ae8bf1.css.map */
