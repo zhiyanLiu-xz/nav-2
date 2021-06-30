@@ -265,7 +265,7 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* padding: 20px 0; */
+  padding: 20px 0;
 }
 @media (min-width: 500px) {
   .siteList .addButton:hover {
@@ -275,7 +275,7 @@ img {
 @media (min-width: 500px) {
   .siteList .addButton {
     width: 112px;
-    height: 112px;
+    /* height: 112px; */
     border-radius: 4px;
   }
 }
@@ -294,7 +294,7 @@ img {
 }
 .siteList .addButton .icon {
   width: 64px;
-  height: 64px;
+  /* height: 64px; */
 }
 @media (min-width: 500px) {
   .siteList .addButton .icon {
@@ -323,7 +323,7 @@ img {
 @media (min-width: 500px) {
   .siteList .addButton .icon-wrapper {
     width: 48px;
-    width: 48px;
+    height: 48px;
     border-radius: 50%;
     background: #f1f3f4;
   }
@@ -336,4 +336,4 @@ img {
 }
 
 
-/*# sourceMappingURL=style.bc59aabb.css.map */
+/*# sourceMappingURL=style.021cd839.css.map */
